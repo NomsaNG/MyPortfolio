@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  post '/contact_form', to: 'pages#contact_form_index', as: 'contact_form_index'
+  # get '/contact_form', to: 'pages#contact_form_index', as: 'contact_form_index'
 end

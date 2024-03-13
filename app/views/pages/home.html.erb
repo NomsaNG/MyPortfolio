@@ -23,19 +23,71 @@
 </div>
 
 <section id="portfolio">
+    <div class="tech-stack">
+      <p>Tech Stack</p>
+      <%= image_tag "TechStack.png", alt:"Tech Stack", class: "tech-image"  %>
+    </div>
+
+    <p class="project-title">My Projects</p>
     <div class="portfolio-images">
-      <div>
-        <%= image_tag "ecobites.png", alt: "Airbnb-Clone", class:"port-image" %>
+      <div class="port-image">
+        <%#= image_tag "", alt: "Airbnb-Clone" %>
       </div>
-      <div>
-        <%= image_tag "game-on.png", alt: "Sports Venue app", class:"port-image" %>
+      <div class="port-image">
+        <%#= image_tag "game-on.png", alt: "Sports Venue app" %>
       </div>
-      <div>
-        <%= image_tag "unnamed.jpg", alt: "Airbnb-Clone", class:"port-image" %>
+      <div class="port-image">
+        <%#= image_tag "unnamed.jpg", alt: "Airbnb-Clone" %>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <!-- contact section content -->
-  </section>
+<section id="contact">
+  <div class="contact-info-and-form">
+    <div class="contact">
+      <p>Contact Me</p>
+      <div class="contact-icon">
+        <div>
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div>
+          <p>Email</p>
+          <p>nomsanatashagoba@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-icon">
+        <div>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div>
+          <p>LinkedIn</p>
+          <p>linkedin.com/in/nomsa-natasha-goba</p>
+        </div>
+      </div>
+
+      <div class="contact-icon">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <p>Phone</p>
+          <p>+27 74 735 1024</p>
+        </div>
+      </div>
+
+      <div class="contact-icon">
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div>
+        <p>Location</p>
+        <p>Cape Town</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <%= render 'shared/form' %>
+    </div>
+  </div>
+</section>
