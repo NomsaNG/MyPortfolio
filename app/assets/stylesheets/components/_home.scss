@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #030303;
 }
 
 
@@ -41,3 +42,21 @@ html, body {
     z-index: 1;
     position: relative;
   }
+
+.portfolio-images{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.port-image{
+    width: 65%;
+    margin: 1.5em;
+    border-radius: 10px;
+    border: solid 2px rgb(24, 24, 151);
+}
+
+#portfolio {
+  background-color: rgb(7, 7, 7);
+  color: white;
+}
